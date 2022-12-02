@@ -1,0 +1,42 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+}
+
+footer{
+    flex-shrink: 0;
+}
+
+
+.icons {
+    display: block;
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    text-indent: 50px;
+    white-space: nowrap;
+}
+
+.icons:hover{
+    opacity: 0.8;
+}
+
+.fb {
+    background: url("https://play-lh.googleusercontent.com/5pZMqQYClc5McEjaISPkvhF8pDmlbLqraTMwk1eeqTlnUSjVxPCq-MItIrJPJGe7xW4") no-repeat;
+    background-size: contain;
+}
+
+.in {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png") no-repeat;
+    background-size: contain;
+}
+
+.wh {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/479px-WhatsApp.svg.png") no-repeat;
+    background-size: contain;
+}
