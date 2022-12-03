@@ -38,7 +38,7 @@ const PostForm: React.FC<Props> = ({existingPost,onSubmit}) => {
   };
 
   return (
-    <form onSubmit={onFormSubmit} className="form">
+    <form onSubmit={onFormSubmit}>
       <h4 className="mt-2">{existingPost ? 'Edit post' : 'Add new post'}</h4>
       <div className="form-group">
         <label htmlFor="name">Name</label>

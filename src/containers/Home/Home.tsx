@@ -28,13 +28,9 @@ const Home = () => {
   }, [fetchAllPosts]);
 
   const PostsEl = allPosts.map(post => {
-    const deletePost = async (id: string) => {
-      await axiosApi.delete('/posts/' + post.id + '.json');
-      setAllPosts(prevState => prevState.filter(post => post.id !== id))
-    };
 
     return (
-      <PostBody deletePost={() => deletePost(post.id)} post={post} key={post.id}/>
+      <PostBody post={post} key={post.id}/>
     )
   });
 

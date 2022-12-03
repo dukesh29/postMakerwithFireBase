@@ -7,9 +7,11 @@ import About from "./containers/About/About";
 import Contacts from "./containers/Contacts/Contacts";
 import AddForm from "./containers/AddForm/AddForm";
 import EditPost from "./containers/EditPost/EditPost";
+import PostBodyFull from "./containers/PostBodyFull/PostBodyFull";
 import './App.css';
 
 function App() {
+
 
   return (
     <div className="App d-flex flex-column gap-3">
@@ -21,7 +23,7 @@ function App() {
           <Route path='/' element={(
             <Home/>
           )}/>
-          <Route path='/posts' element={(
+          <Route path='/add' element={(
             <AddForm/>
           )}/>
           <Route path='/about' element={(
@@ -32,6 +34,9 @@ function App() {
           )}/>
           <Route path='/posts/:id/edit' element={(
             <EditPost/>
+          )}/>
+          <Route path='/posts/:id' element={(
+            <PostBodyFull/>
           )}/>
         </Routes>
       </main>
